@@ -22,25 +22,8 @@
     html,body{height:100%}
     body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial}
 
-    .wrap{
-  min-height: 100svh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  padding-left: calc(24px + env(safe-area-inset-left));
-  padding-right: calc(24px + env(safe-area-inset-right));
-}
-    .card{
-  max-width: 420px;
-  width: 100%;
-  background: transparent;
-  border-radius: 24px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0,0,0,.15);
-  margin: 0 auto;
-}
+    .wrap{min-height:100%; display:grid; place-items:center; padding:28px}
+    .card{width:min(420px, 92vw);background:transparent;border-radius:24px;position:relative;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.15)}
 
     header{display:grid; grid-template-columns:1fr; gap:6px; align-items:center; text-align:center}
     .avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid #ffffff;margin:0 auto 6px}
@@ -82,24 +65,7 @@
     .splash{position:fixed; inset:0; background:#ffffff; display:grid; place-items:center; z-index:1000; transition:opacity .45s ease, visibility .45s ease}
     .splash.hidden{opacity:0; visibility:hidden; pointer-events:none}
     .splash img{max-width:72vw; max-height:72vh; height:auto; width:auto}
-  
-@media (max-height: 640px){
-  .wrap{
-    align-items: flex-start;
-    padding-top: 28px;
-  }
-}
-
-.title-name{
-  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 700;
-  letter-spacing: 0.2px;
-}
-</style>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  </style>
 </head>
 <body>
   <!-- Pantalla de bienvenida (3,5s) -->
@@ -112,7 +78,7 @@
         <header>
           <img src="avatar.jpg" alt="Tu foto" class="avatar" />
           <div>
-            <h1 class="title-name">Adriana Cataño</h1>
+            <h1>Adriana Cataño</h1>
             <p class="subtitle">Project Manager</p>
           </div>
         </header>
