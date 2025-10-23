@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adriana Cataño</title>
+  <meta name="description" content="Tarjeta de contacto: email, WhatsApp y redes sociales." />
+  <meta property="og:title" content="Adriana Cataño – Contacto" />
+  <meta property="og:description" content="Escríbeme por email o WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#111111" />
+  <style>
+    :root{
+      --bg: #ffffff;
+      --card: #c8dbda;
+      --text: #000000;
+      --muted: rgba(0,0,0,.35);
+      --accent: #94b6d2;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial}
+
+    .wrap{min-height:100%; display:grid; place-items:center; padding:28px}
+    .card{width:min(420px, 92vw);background:transparent;border-radius:24px;position:relative;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.15)}
+
+    header{display:grid; grid-template-columns:1fr; gap:6px; align-items:center; text-align:center}
+    .avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid #ffffff;margin:0 auto 6px}
+    h1{margin:0; font-size:28px}
+    .subtitle{font-style:italic; font-size:16px; color:rgba(0,0,0,.75); margin:0 0 10px 0}
+
+    .hero{background: linear-gradient(180deg, #c8dbda 0%, #94b6d2 100%); padding:32px 24px; min-height:36vh; display:flex; align-items:center; justify-content:center; flex-direction:column}
+    .content{background:#ffffff; padding:32px 24px; border-radius:0 0 24px 24px; border:1px solid rgba(0,0,0,.06); border-top:none}
+
+    .about{max-width:36ch; margin:24px auto 20px; text-align:center; line-height:1.7; color:rgba(0,0,0,.78)}
+
+    .contact-card{background:#ffffff; border:1px solid rgba(0,0,0,.08); border-radius:16px; padding:16px; box-shadow:0 6px 18px rgba(0,0,0,.08); margin:24px auto 24px; max-width:38ch}
+    .contact-list{list-style:none; padding:0; margin:12px 0 10px; display:grid; gap:12px; text-align:left; max-width:36ch; margin-left:auto; margin-right:auto}
+    .contact-list a{color:inherit; text-decoration:none}
+    .contact-item{display:grid; gap:4px; border-bottom:1px solid rgba(0,0,0,.15); padding-bottom:10px}
+    .contact-item:last-child{border-bottom:none}
+    .contact-label{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em}
+    .contact-row{display:flex; align-items:center; gap:10px; justify-content:flex-start}
+    .icon{width:18px; height:18px; stroke: currentColor; fill: none; stroke-width: 1.8; opacity:0.8}
+    .contact-text{font-weight:600;}
+
+    .findme{margin:28px 0 12px; text-align:left; font-size:16px; color:#000000; font-weight:700}
+
+    .links{margin-top:12px; display:grid; grid-template-columns:1fr; gap:12px}
+    .btn{display:flex; align-items:center; justify-content:center; gap:10px; padding:14px 16px; font-weight:800; font-size:16px; text-decoration:none; border-radius:14px; -webkit-tap-highlight-color:transparent; border:1px solid rgba(0,0,0,.06)}
+    .btn.white{background:#ffffff; color:#111; box-shadow:0 4px 14px rgba(0,0,0,.06)}
+    .btn.white:hover{ transform: translateY(-1px); box-shadow:0 8px 24px rgba(0,0,0,.10)}
+    .btn.white:focus{ outline:2px solid #94b6d2; outline-offset:2px }
+    .btn.gradient{background:linear-gradient(180deg, #c8dbda 0%, #94b6d2 100%); color:#111; border:1px solid rgba(0,0,0,.08); box-shadow:0 6px 18px rgba(0,0,0,.08)}
+    .btn.gradient:hover{ transform: translateY(-1px); box-shadow:0 10px 28px rgba(0,0,0,.16)}
+    .btn.gradient:focus{ outline:2px solid #94b6d2; outline-offset:2px }
+    .btn .icon{width:18px;height:18px;stroke:none;fill:currentColor;opacity:.9}
+    .btn:hover{ transform: translateY(-1px); box-shadow:0 8px 24px rgba(0,0,0,.25)}
+    .btn:focus{ outline:2px solid #94b6d2; outline-offset:2px }
+
+    footer{margin-top:24px; color:var(--muted); font-size:14px}
+
+    /* Splash */
+    .splash{position:fixed; inset:0; background:#ffffff; display:grid; place-items:center; z-index:1000; transition:opacity .45s ease, visibility .45s ease}
+    .splash.hidden{opacity:0; visibility:hidden; pointer-events:none}
+    .splash img{max-width:72vw; max-height:72vh; height:auto; width:auto}
+  </style>
+</head>
+<body>
+  <!-- Pantalla de bienvenida (3,5s) -->
+  <div class="splash" role="img" aria-label="Pantalla de bienvenida">
+    <img src="splash.jpg" alt="Bienvenida" />
+  </div>
+  <div class="wrap">
+    <main class="card" role="main">
+      <section class="hero">
+        <header>
+          <img src="avatar.jpg" alt="Tu foto" class="avatar" />
+          <div>
+            <h1>Adriana Cataño</h1>
+            <p class="subtitle">Project Manager</p>
+          </div>
+        </header>
+      </section>
+
+      <section class="content">
+        <p class="about">Como Project Manager, gestiono proyectos y mejoro procesos.
+Me enfoco en la planificación, el seguimiento y la mejora continua, aportando estructura, claridad y colaboración para que las ideas avancen.</p>
+
+        <div class="contact-card">
+          <ul class="contact-list">
+            <li class="contact-item">
+              <span class="contact-label">Teléfono</span>
+              <a class="contact-row" href="tel:+34657079137">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.1 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.1.74.27 1.47.5 2.17a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.91-1.1a2 2 0 0 1 2.11-.45c.7.23 1.43.4 2.17.5A2 2 0 0 1 22 16.92z"/></svg>
+                <span class="contact-text">+34 657 079 137</span>
+              </a>
+            </li>
+            <li class="contact-item">
+              <span class="contact-label">Email</span>
+              <a class="contact-row" href="mailto:acl.catano@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 3l8 5 8-5"/></svg>
+                <span class="contact-text">acl.catano@gmail.com</span>
+              </a>
+            </li>
+            <li class="contact-item">
+              <span class="contact-label">Ubicación</span>
+              <div class="contact-row">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s-7-5.33-7-11a7 7 0 1 1 14 0c0 5.67-7 11-7 11z"/><circle cx="12" cy="11" r="3"/></svg>
+                <span class="contact-text">Madrid, España</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <h3 class="findme">Encuéntrame en:</h3>
+        <section class="links" aria-label="Acciones de contacto">
+          <a class="btn white" href="https://drive.google.com/drive/folders/1tokapSPiolRI5pakoAhoS0Bve1bSjQYW?usp=drive_link" target="_blank" rel="noopener">Ver CV en español o inglés</a>
+          <a class="btn white" href="https://www.linkedin.com/in/adriana-cataño" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0H12v2.2h.06c.62-1.17 2.14-2.4 4.41-2.4 4.71 0 5.58 3.1 5.58 7.1V24h-5v-6.9c0-1.64-.03-3.75-2.28-3.75-2.28 0-2.63 1.78-2.63 3.63V24h-5V8z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn white" href="https://wa.me/34657079137" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.62-6.003C.122 5.28 5.403 0 12.057 0c3.17 0 6.155 1.237 8.4 3.484a11.79 11.79 0 0 1 3.5 8.396c-.003 6.654-5.284 11.935-11.938 11.935a11.95 11.95 0 0 1-6.003-1.62L.057 24zm6.597-3.807c1.735.995 3.276 1.591 5.392 1.593 5.447.003 9.886-4.432 9.889-9.88.002-5.462-4.415-9.883-9.881-9.885-5.45-.002-9.89 4.43-9.892 9.878-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.745-.988zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.173.198-.297.297-.495.099-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.01-.371-.01-.57-.01s-.52.074-.793.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+            WhatsApp
+          </a>
+          <button id="save-contact" class="btn gradient" type="button" aria-label="Guardar contacto">Guardar contacto</button>
+        </section>
+
+        <footer>© <span id="year"></span> Adriana Cataño</footer>
+      </section>
+    </main>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Splash screen: mostrar imagen 3.5s y luego ocultar
+    const splash = document.querySelector('.splash');
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const SPLASH_MS = 3500;
+    if (splash) {
+      const hideSplash = () => splash.classList.add('hidden');
+      if (prefersReduced) { hideSplash(); }
+      else { setTimeout(hideSplash, SPLASH_MS); }
+    }
+
+    // --- Utilidades ---
+    function buildVCard() {
+      // Usamos template literal para evitar errores de escape y EOF
+      return `BEGIN:VCARD\nVERSION:3.0\nFN:Adriana Cataño\nN:Cataño;Adriana;;;\nTEL;TYPE=CELL:+34 657 079 137\nEMAIL;TYPE=INTERNET:acl.catano@gmail.com\nADR;TYPE=HOME:;;Madrid;;;España\nEND:VCARD`;
+    }
+
+    function downloadVCard(filename, contents) {
+      const blob = new Blob([contents], { type: 'text/vcard' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    // Botón: Guardar contacto como vCard (.vcf)
+    const saveBtn = document.getElementById('save-contact');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const vcard = buildVCard();
+        downloadVCard('Adriana_Catano.vcf', vcard);
+      });
+    }
+
+    // --- Test cases rápidos (sanity checks) ---
+    (function runTests(){
+      try {
+        const v = buildVCard();
+        console.assert(v.includes('FN:Adriana Cataño'), 'vCard debe incluir el nombre completo');
+        console.assert(v.includes('TEL;TYPE=CELL:+34 657 079 137'), 'vCard debe incluir el teléfono móvil');
+        console.assert(v.split('\n').length >= 7, 'vCard debe tener múltiples líneas separadas por "\\n"');
+        // Validación simple de inicio/fin
+        console.assert(v.startsWith('BEGIN:VCARD') && v.endsWith('END:VCARD'), 'vCard debe empezar/terminar correctamente');
+        // Si todos pasan, opcionalmente puedes descomentar para ver log
+        // console.log('Tests OK');
+      } catch (e) {
+        console.error('Fallo en tests vCard:', e);
+      }
+    })();
+  </script>
+</body>
+</html>
